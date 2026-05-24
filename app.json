@@ -43,6 +43,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "614e3e18-a880-46f0-9a1b-555a71202c44"
+      }
+    },
+    "owner": "designkreativ"
   }
 }
