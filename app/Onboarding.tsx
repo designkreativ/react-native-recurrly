@@ -1,13 +1,12 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from "react";
+import { Text, View } from "react-native";
 
 const Onboarding = () => {
   return (
     <View>
       <Text>Onboarding</Text>
     </View>
+  );
+};
 
-  )
-}
-
-export default Onboarding
+export default Onboarding;

@@ -1,15 +1,14 @@
 import { tabs } from "@/constants/data";
+import { colors, components } from "@/constants/theme";
 import { clsx } from "clsx";
-import { Image } from "react-native";
 import { Tabs } from "expo-router";
-import { View } from "react-native";
-import {colors, components } from "@/constants/theme"
-import {useSafeAreaInsets} from "react-native-safe-area-context"
+import { Image, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-const tabBar = components.tabBar
+const tabBar = components.tabBar;
 
 const TabLayout = () => {
-  const insets = useSafeAreaInsets()
+  const insets = useSafeAreaInsets();
 
   const TabIcon = ({ focused, icon }: TabIconProps) => {
     return (
@@ -30,7 +29,7 @@ const TabLayout = () => {
           position: "absolute",
           bottom: Math.max(insets.bottom, tabBar.horizontalInset),
           height: tabBar.height,
-          marginHorizontal:tabBar.horizontalInset,
+          marginHorizontal: tabBar.horizontalInset,
           borderRadius: tabBar.radius,
           backgroundColor: colors.primary,
           borderTopWidth: 0,
@@ -43,7 +42,7 @@ const TabLayout = () => {
           width: tabBar.iconFrame,
           height: tabBar.iconFrame,
           alignSelf: "center",
-        }
+        },
       }}
     >
       {tabs.map((tab) => (
