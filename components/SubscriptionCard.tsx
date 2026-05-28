@@ -45,7 +45,7 @@ const SubscriptionCard = ({
       </View>
        {expanded && (
         <View className="sub-expanded">
-            <Text className="sub-expanded-text">Subscription Detail goes here</Text>
+            <Text className="sub-expanded-text">Subscription Detail Goes here</Text>
         </View>
        )}
     </Pressable>
