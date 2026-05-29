@@ -23,7 +23,6 @@ const SubscriptionCard = ({
       style={!expanded && color ? { backgroundColor: color } : undefined}
     >
       <View className="sub-head">
-
         <View className="sub-main">
           <Image source={icon} className="sub-icon" />
           <View className="sub-copy">
@@ -43,11 +42,13 @@ const SubscriptionCard = ({
           </View>
         </View>
       </View>
-       {expanded && (
+      {expanded && (
         <View className="sub-expanded">
-            <Text className="sub-expanded-text">Subscription Detail Goes here</Text>
+          <Text className="sub-expanded-text">
+            Subscription Detail Goes here
+          </Text>
         </View>
-       )}
+      )}
     </Pressable>
   );
 };
